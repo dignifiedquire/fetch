@@ -430,4 +430,4 @@
     })
   }
   self.fetch.polyfill = true
-})(typeof self !== 'undefined' ? self : this);
+})(typeof self !== 'undefined' ? self : (typeof window !== 'undefined' ? window : this));
